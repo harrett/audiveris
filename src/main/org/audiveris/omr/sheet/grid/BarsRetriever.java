@@ -267,10 +267,10 @@ public class BarsRetriever
         detectBracketMiddles(); // Detect middle portions of brackets
 
         watch.start("purgeLeftPeaks");
-        purgeLeftPeaks(); // Purge peaks on left of staff (if not brace or bracket)
+//        purgeLeftPeaks(); // Purge peaks on left of staff (if not brace or bracket)
 
         watch.start("purgeUnalignedBars");
-        purgeUnalignedBars(); // On multi-staff systems, purge unaligned bars
+//        purgeUnalignedBars(); // On multi-staff systems, purge unaligned bars
 
         watch.start("purgeExtendingPeaks");
         purgeExtendingPeaks(); // Purge peaks extending beyond system staves
@@ -1016,7 +1016,12 @@ public class BarsRetriever
         }
 
         part.setId(1 + parts.size());
-        system.addPart(part);
+        // handle part rather than 1
+        if (part.getId() > 1) {
+            parts.get(0).addStaff(part.getFirstStaff());
+        } else {
+            system.addPart(part);
+        }
 
         // Check of a "merged" part (composed of 2 staves merged into some 11-line grand staff)
         // This is based on the vertical distance between the 2 staves
@@ -1183,7 +1188,7 @@ public class BarsRetriever
                 final int iStart = projector.getStartPeakIndex();
 
                 if (iStart == -1) {
-                    continue; // Start peak must exist
+//                    continue; // Start peak must exist
                 }
 
                 // Look for brace portion on left of first peak

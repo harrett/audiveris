@@ -33,7 +33,7 @@
     
     <!-- MuseScore -->
     <plugin id="MuseScore" tip="Invoke MuseScore on score XML">
-        <arg>C:\Program Files (x86)\MuseScore 2\bin\MuseScore.exe</arg>
+        <arg>/home/ccmusic/Application/MuseScore-3.6.2.548021370-x86_64.AppImage</arg>
         <arg>{}</arg>
     </plugin>
     

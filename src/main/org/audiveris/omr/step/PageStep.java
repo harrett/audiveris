@@ -380,7 +380,7 @@ public class PageStep
 
         if (impact.onVoices) {
             // Refine voices IDs (and thus colors) across all systems of the page
-            Voices.refinePage(page);
+//            Voices.refinePage(page);
         }
     }
 

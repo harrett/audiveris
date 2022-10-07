@@ -78,6 +78,7 @@ public class ScoreReduction
      */
     public int reduce (List<SheetStub> stubs)
     {
+        // debug
         final List<List<Candidate>> sequences = buildSequences(score.getPages(stubs));
 
         // Connect the parts across all pages of the score

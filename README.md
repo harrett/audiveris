@@ -105,3 +105,8 @@ All releases are available on [Audiveris Releases][releases] page.
 [sources]:        https://audiveris.github.io/audiveris/_pages/install/sources/
 [releases]:       https://github.com/Audiveris/audiveris/releases
 [jdk-downloads]:  https://www.oracle.com/java/technologies/downloads/
+
+## Cli
+
+-batch -export -option org.audiveris.omr.sheet.BookManager.useCompression=false -option org.audiveris.omr.step.LoadStep.maxPixelCount=200000000 -output /home/ccmusic/downloads -- /home/ccmusic/downloads/997157.pdf
+-export -option org.audiveris.omr.sheet.BookManager.useCompression=false -option org.audiveris.omr.step.LoadStep.maxPixelCount=200000000 -option org.audiveris.omr.text.Language.defaultSpecification=eng+chi_sim -output /home/ccmusic/downloads -- /home/ccmusic/downloads/waifu2x.png

@@ -1620,7 +1620,7 @@ public class StaffProjector
                 "Minimum cumul value to detect bar peak");
 
         private final Scale.Fraction braceThreshold = new Scale.Fraction(
-                1.1,
+                0.5,
                 "Minimum cumul value to detect brace peak");
 
         private final Scale.Fraction gapThreshold = new Scale.Fraction(

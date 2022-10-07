@@ -210,7 +210,7 @@ public class HeaderBuilder
         clefColumn.selectClefs();
 
         // Purge barline inters found within headers
-        purgeBarlines();
+//        purgeBarlines();
 
         // Freeze header inters
         freezeHeaders();
